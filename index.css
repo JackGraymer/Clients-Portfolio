@@ -221,6 +221,8 @@ body:not(.user-is-tabbing) a:focus {
     color: inherit;
     border: 1px solid  var(--pink);
     font-weight: 400;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:focus {
@@ -249,6 +251,8 @@ body:not(.user-is-tabbing) a:focus {
 .btn--pink {
     background: var(--pink);
     transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn--pink::after {
@@ -438,7 +442,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__social-links {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     padding: var(--gutter-normal) 0;
     list-style: none;
 }
