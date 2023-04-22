@@ -487,6 +487,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__text {
     flex: 0 0 30%;
+    text-align: justify;
 }
 
 .work__list {
@@ -538,9 +539,9 @@ body:not(.user-is-tabbing) a:focus {
     max-width: 18rem;
 }
 
-@media(max-width: 1240px) {
+@media(max-width: 1000px) {
     .client__logos {
-        overflow-x: scroll;
+    overflow-x: scroll;
         padding: var(--gutter-normal);
     }
 
@@ -554,7 +555,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .about__content {
-    display: flex;
+    display: inline;
     flex-direction: row-reverse;
     align-items: center;
 }
@@ -562,35 +563,28 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 900px) {
     .about__content {
         flex-direction: column-reverse;
-        align-items: initial;
+        align-items: center;
     }
 }
 
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
-    max-width: 100%;
-    width:100%;
-    height:auto;
-    border-radius:50%;
-    background-position-y: center;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    align-items: center;
+
 }
 
 @media(min-width: 901px) {
     .about__text {
         flex: 0 0 35%;
+        word-wrap: break-word;
+        max-width: 700px;
+        text-align: justify;
     }
     
     .about__photo-container {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
+        align-items: center;
     }
 }
 
