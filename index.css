@@ -78,7 +78,7 @@ body {
 
 .row {
     max-width: var(--container-max-width);
-    margin: 0 auto;
+    margin: auto auto;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -257,6 +257,10 @@ body:not(.user-is-tabbing) a:focus {
 .btn--pink {
     background: var(--pink);
     transition: all 0.2s;
+    justify-content: center;
+    align-items: center;
+    max-width: 10em;
+    text-align: center;
 }
 
 .btn--pink::after {
@@ -345,8 +349,11 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav {
     display: flex;
-    justify-content: flex-end;
-    padding: var(--gutter-normal) 0;
+    justify-content: center;
+    padding: 0 0;
+    background-color: var(--black);
+    width: 100vw;
+    position: fixed;
 }
 
 .nav__items {
@@ -355,24 +362,26 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__item:not(:last-child) {
-    margin-right: var(--gutter-medium);
+    margin-right: var(--gutter-small);
 }
 
 @media(max-width: 500px) {
     .nav {
         justify-content: center;
+        margin-right: var(--gutter-normal);
     }
 }
 
 @media(max-width: 400px) {
     .nav__item:not(:last-child) {
-        margin-right: var(--gutter-normal);
+        margin-right: var(--gutter-small);
     }
 }
 
 @media(max-width: 300px) {
     .nav {
         font-size: var(--font-size-small);
+        margin-right: var(--gutter-small);
     }
 }
 
@@ -419,13 +428,12 @@ body:not(.user-is-tabbing) a:focus {
     background-position: center;
     background-attachment: fixed;
     font-size: var(--font-size-normal);
+    display: grid;
 }
 
+
 .header__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: grid;
 }
 
 .header__text p {
@@ -536,24 +544,18 @@ body:not(.user-is-tabbing) a:focus {
 .client__logos {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 .client__logo {
     height: 8rem;
     max-width: 18rem;
     margin-right: var(--gutter-small);
+    margin-bottom: 1em;
 }
 
-@media(max-width: 1000px) {
-    .client__logos {
-    overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-small);
-    }
-}
 
 /* --------------------------------------- */
 /* ----- About ----- */
