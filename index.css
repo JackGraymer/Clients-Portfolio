@@ -79,6 +79,9 @@ body {
 .row {
     max-width: var(--container-max-width);
     margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(max-width: 1340px) {
@@ -215,7 +218,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .btn {
     position: relative;
-    display: inline-flex;
+    display: inline-block;
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
@@ -421,7 +424,8 @@ body:not(.user-is-tabbing) a:focus {
 .header__text {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header__text p {
@@ -532,12 +536,12 @@ body:not(.user-is-tabbing) a:focus {
 .client__logos {
     display: flex;
     justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
 }
 
 .client__logo {
-    height: 6.5rem;
+    height: 8rem;
     max-width: 18rem;
+    margin-right: var(--gutter-small);
 }
 
 @media(max-width: 1000px) {
@@ -547,7 +551,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 
     .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
+        margin-right: var(--gutter-small);
     }
 }
 
