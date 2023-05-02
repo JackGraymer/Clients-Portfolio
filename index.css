@@ -553,7 +553,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__image{
     max-width: 750px;
-    object-fit: cover;
+    width: 100%;
+    sobject-fit: cover;
 }
 
 @media(max-width: 900px) {
