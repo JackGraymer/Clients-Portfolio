@@ -1,276 +1,373 @@
-
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./images/WebsiteLogoAB.png" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<!-- Put your site title here -->
+		<title>Alberto Buftea</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./images/WebsiteLogoAB.png" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- Put your site title here -->
-  <title>
-    Alberto Buftea
-  </title>
+		<meta
+			name="Alberto Buftea"
+			content="Expert in Product Management, Data Analytics, Artificial Intelligence." />
+		<!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+		<meta
+			name="keywords"
+			content="Put your name, skills and some coding keywords" />
+		<link rel="stylesheet" href="index.css" />
+	</head>
 
-  <meta name="Alberto Buftea" content="Expert in Product Management, Data Analytics, Artificial Intelligence.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
-</head>
+	<body>
+		<nav class="nav" role="navigation">
+			<ul class="nav__items">
+				<li class="nav__item">
+					<a href="#portfolio" class="nav__link">Portfolio</a>
+				</li>
+				<li class="nav__item">
+					<a href="#expertise" class="nav__link">Expertise</a>
+				</li>
+				<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+				<li class="nav__item">
+					<a href="#contact" class="nav__link">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- ***** Header ***** -->
 
-<body>
-    <nav class="nav" role="navigation">
-      <ul class="nav__items">
-        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-        <li class="nav__item"><a href="#expertise" class="nav__link">Expertise</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-      </ul>
-    </nav>
-  <!-- ***** Header ***** -->
+		<header class="header" role="banner" id="top">
+			<div class="header__text-box row">
+				<div class="header__text">
+					<h1 class="heading-primary">
+						<!-- Replace the following name with your name -->
+						<span>Alberto Gabriel Buftea</span>
+					</h1>
+					<!-- Put a small paragraph about yourself -->
+					<p>Product Management, Data Analytics, Artificial Intelligence.</p>
+					<a href="#contact" class="btn btn--pink">Get in touch</a>
+					<!-- Links to Social Sites -->
+					<ul class="header__social-links">
+						<li class="header__social-link-item">
+							<a
+								href="https://twitter.com/buftea93"
+								title="Link to Twitter Profile">
+								<img
+									src="./images/twitter.svg"
+									class="header__social-image"
+									alt="Twitter" />
+							</a>
+						</li>
+						<li class="header__social-link-item">
+							<a
+								href="https://github.com/ABuftea"
+								title="Link to GitHub Profile">
+								<img
+									src="./images/github.svg"
+									class="header__social-image"
+									alt="GitHub" />
+							</a>
+						</li>
+						<li class="header__social-link-item">
+							<a href="https://www.linkedin.com/in/buftea/">
+								<img
+									src="./images/linkedin.svg"
+									title="Link to LinkedIn Profile"
+									class="header__social-image"
+									alt="LinkedIn" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
-  <header class="header" role="banner" id="top">
-    
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Alberto Gabriel Buftea</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>Product Management, Data Analytics, Artificial Intelligence.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-        <!-- Links to Social Sites -->
-        <ul class="header__social-links">
-          <li class="header__social-link-item">
-            <a href="https://twitter.com/buftea93" title="Link to Twitter Profile">
-              <img src="./images/twitter.svg" class="header__social-image" alt="Twitter">
-            </a>
-          </li>
-          <li class="header__social-link-item">
-            <a href="https://github.com/ABuftea" title="Link to GitHub Profile">
-              <img src="./images/github.svg" class="header__social-image" alt="GitHub">
-            </a>
-          </li>
-          <li class="header__social-link-item">
-            <a href="https://www.linkedin.com/in/buftea/">
-              <img src="./images/linkedin.svg" title="Link to LinkedIn Profile" class="header__social-image" alt="LinkedIn">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
+		<main role="main">
+			<!-- ***** Work ***** -->
 
-  <main role="main">
+			<section class="portfolio" id="portfolio">
+				<div class="row">
+					<h2>Portfolio</h2>
+					<div class="work__boxes">
+						<!-- Each div with the work__box class is a project. -->
 
-    <!-- ***** Work ***** -->
+						<div class="work__box">
+							<div class="work__text">
+								<h3>Crypto Prediction</h3>
+								<p>
+									Comparison between Deep Learnign (DL) and Machine Learning
+									(ML) techniques for cryptocurrency price prediction, using
+									Gradient Boosting Enssemble (GBE) as of ML and Long Short Term
+									Memory (LTSM) as for DL artificial neural networks.
+								</p>
+								<ul class="work__list">
+									<li>Python</li>
+									<li>Pandas</li>
+									<li>SciKit</li>
+									<li>Tensorflow</li>
+									<li>APIs</li>
+								</ul>
 
-    <section class="portfolio" id="portfolio">
-      <div class="row">
-        <h2>Portfolio</h2>
-        <div class="work__boxes">
+								<div class="work__links">
+									<a
+										href="https://github.com/ABuftea"
+										target="_blank"
+										class="link__text">
+										View Source Code <span>&rarr;</span>
+									</a>
+									<a href="https://github.com/ABuftea" target="_blank">
+										<img
+											src="./images/github.svg"
+											class="work__code"
+											title="View Source Code"
+											alt="GitHub" />
+									</a>
+								</div>
 
-          <!-- Each div with the work__box class is a project. -->
+								<div class="work__links">
+									<a
+										href="./documents/AlbertoBufteaComparisonGBEvsRNNforCryptoInvesting.pdf"
+										download
+										target="_blank"
+										class="link__text">
+										Download Report &nbsp; <span>&rarr;</span>
+									</a>
+									<a
+										href="./documents/AlbertoBufteaComparisonGBEvsRNNforCryptoInvesting.pdf"
+										download
+										target="_blank">
+										<img
+											src="./images/document.svg"
+											class="work__code"
+											title="Download Document"
+											alt="GitHub" />
+									</a>
+								</div>
+							</div>
+							<div class="work__image-box">
+								<img
+									src="./images/CryptoInvestingProject.jpg"
+									class="work__image"
+									alt="CryptoInvestingProject" />
+							</div>
+						</div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Crypto Prediction</h3>
-              <p>
-                Comparison between Deep Learnign (DL) and Machine Learning (ML) techniques for cryptocurrency price prediction, 
-                using Gradient Boosting Enssemble (GBE) as of ML and Long Short Term Memory (LTSM) as for DL artificial neural networks.
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Pandas</li>
-                <li>SciKit</li>
-                <li>Tensorflow</li>
-                <li>APIs</li>
-              </ul>
+						<div class="work__box">
+							<div class="work__text">
+								<h3>News Categorisation</h3>
+								<p>
+									Extract topics for the news published in website and classify
+									incoming news under one of the extracted topics. This project
+									involves both, supervised and unsupervised learning, by first
+									using Latent Dirichlet Allocation (LDA) to obtaining the
+									topics (categories) to later classify incoming news using
+									Support Vector Machine (SVM).
+								</p>
+								<ul class="work__list">
+									<li>Python</li>
+									<li>Web Scrapping</li>
+									<li>Natural Language Processing (NLP)</li>
+									<li>Support Vector Machine (SVM)</li>
+									<li>Latent Dirichlet Allocation (LDA)</li>
+								</ul>
 
-              <div class="work__links">
-                <a href="https://github.com/ABuftea" target="_blank" class="link__text">
-                  View Source Code <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/ABuftea" target="_blank">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
+								<div class="work__links">
+									<a
+										href="https://github.com/ABuftea"
+										target="_blank"
+										class="link__text">
+										View Source Code <span>&rarr;</span>
+									</a>
+									<a href="https://github.com/ABuftea" target="_blank">
+										<img
+											src="./images/github.svg"
+											class="work__code"
+											title="View Source Code"
+											alt="GitHub" />
+									</a>
+								</div>
+							</div>
+							<div class="work__image-box">
+								<img
+									src="./images/NewsCategorizationProject.png"
+									class="work__image"
+									alt="NewsCategorizationProject" />
+							</div>
+						</div>
 
-              <div class="work__links">
-                <a href="./documents/AlbertoBufteaComparisonGBEvsRNNforCryptoInvesting.pdf" download target="_blank" class="link__text">
-                  Download Report  &nbsp; <span>&rarr;</span>
-                </a>
-                <a href="./documents/AlbertoBufteaComparisonGBEvsRNNforCryptoInvesting.pdf" download  target="_blank">
-                  <img src="./images/document.svg" class="work__code" title="Download Document" alt="GitHub">
-                </a>
-              </div>
+						<div class="work__box">
+							<div class="work__text">
+								<h3>Tweets Sentiment</h3>
+								<p>
+									Creating a recurrent neural network which is able to detect if
+									the sentiment of a tweet is negative, positive or neutral. The
+									tweets come in two csv files (training and testing) which
+									needs to be processed in order to arrange the tweets by
+									sentiment and pre-process the text before training the
+									network.
+								</p>
+								<ul class="work__list">
+									<li>Python</li>
+									<li>Natural Language Processing (NLP)</li>
+									<li>Tensorflow</li>
+									<li>Recurrent Neural Networks (RRN)</li>
+								</ul>
 
-            </div>
-            <div class="work__image-box">
-              <img src="./images/CryptoInvestingProject.jpg" class="work__image" alt="CryptoInvestingProject" />
-            </div>
-          </div>
+								<div class="work__links">
+									<a
+										href="https://github.com/ABuftea"
+										target="_blank"
+										class="link__text">
+										View Source Code <span>&rarr;</span>
+									</a>
+									<a href="https://github.com/ABuftea" target="_blank">
+										<img
+											src="./images/github.svg"
+											class="work__code"
+											title="View Source Code"
+											alt="GitHub" />
+									</a>
+								</div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>News Categorisation</h3>
-              <p>
-                Extract topics for the news published in website and classify incoming news under one of the extracted topics. 
-                This project involves both, supervised and unsupervised learning, by first using Latent Dirichlet Allocation (LDA) 
-                to obtaining the topics (categories) to later classify incoming news using Support Vector Machine (SVM).
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Web Scrapping</li>
-                <li>Natural Language Processing (NLP)</li>
-                <li>Support Vector Machine (SVM)</li>
-                <li>Latent Dirichlet Allocation (LDA)</li>
-              </ul>
+								<div class="work__links">
+									<a
+										href="./documents/AlbertoBufteaTweetsSentimentAnalysis.pdf"
+										download
+										target="_blank"
+										class="link__text">
+										Download Report &nbsp; <span>&rarr;</span>
+									</a>
+									<a
+										href="./documents/AlbertoBufteaTweetsSentimentAnalysis.pdf"
+										download
+										target="_blank">
+										<img
+											src="./images/document.svg"
+											class="work__code"
+											title="Download Document"
+											alt="GitHub" />
+									</a>
+								</div>
+							</div>
+							<div class="work__image-box">
+								<img
+									src="./images/TweetSentimentProject.jpg"
+									class="work__image"
+									alt="TweetSentimentProject" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-              <div class="work__links">
-                <a href="https://github.com/ABuftea" target="_blank" class="link__text">
-                  View Source Code <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/ABuftea" target="_blank">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
+			<!-- ***** Clients ***** -->
 
-            </div>
-            <div class="work__image-box">
-              <img src="./images/NewsCategorizationProject.png" class="work__image" alt="NewsCategorizationProject" />
-            </div>
-          </div>
+			<section class="expertise" id="expertise">
+				<div class="row">
+					<h2>Expertise</h2>
+					<div class="client__logos">
+						<!-- Add logos of the clients or companies you'have worked with. -->
+						<img
+							src="./images/management.jpeg"
+							class="client__logo"
+							alt="Management" />
+						<img
+							src="./images/dataanalysis.jpg"
+							class="client__logo"
+							alt="DataAnalysis" />
+						<img
+							src="./images/integrations.png"
+							class="client__logo"
+							alt="Integrations" />
+						<img src="./images/python.png" class="client__logo" alt="Python" />
+						<img src="./images/SQL.webp" class="client__logo" alt="SQL" />
+						<img src="./images/powershell.jpeg" class="client__logo" alt="" />
+						<img
+							src="./images/deeplearning.png"
+							class="client__logo"
+							alt="DeepLearning" />
+						<img
+							src="./images/machinelearning.png"
+							class="client__logo"
+							alt="MachineLearning" />
+						<img src="./images/NLP.jpeg" class="client__logo" alt="NLP" />
+					</div>
+				</div>
+			</section>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Tweets Sentiment</h3>
-              <p>
-                Creating a recurrent neural network which is able to detect if the sentiment of a tweet is negative, positive or neutral.  
-                The tweets come in two csv files (training and testing) which needs to be processed in order to arrange the tweets by sentiment and pre-process the text before training the network. 
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Natural Language Processing (NLP)</li>
-                <li>Tensorflow</li>
-                <li>Recurrent Neural Networks (RRN)</li>
-              </ul>
+			<!-- ***** About ***** -->
 
-              <div class="work__links">
-                <a href="https://github.com/ABuftea" target="_blank" class="link__text">
-                  View Source Code <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/ABuftea" target="_blank">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
+			<section class="about" id="about">
+				<div class="row">
+					<h2>About Me</h2>
 
-              <div class="work__links">
-                <a href="./documents/AlbertoBufteaTweetsSentimentAnalysis.pdf" download target="_blank" class="link__text">
-                  Download Report  &nbsp; <span>&rarr;</span>
-                </a>
-                <a href="./documents/AlbertoBufteaTweetsSentimentAnalysis.pdf" download  target="_blank">
-                  <img src="./images/document.svg" class="work__code" title="Download Document" alt="GitHub">
-                </a>
-              </div>
+					<div class="about__content">
+						<div class="about__photo-container">
+							<img
+								src="./images/AboutMePicture.jpeg"
+								class="w3-circle"
+								alt=""
+								style="width: 30%" />
+						</div>
 
-            </div>
-            <div class="work__image-box">
-              <img src="./images/TweetSentimentProject.jpg" class="work__image" alt="TweetSentimentProject" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+						<div class="about__text">
+							<!-- Replace the below paragraph with info about yourself -->
+							<p>
+								I am a graduated engineer with an entrepreneurial mindset
+								interested in digital products and enhancing users experience.
+								My technical focus is on Artificial Intelligence and Data
+								Analytics. Currently, I am employed by Banco Santander where I
+								lead the implementation of Know Yor Customer (KYC) initiatives.
+								On my free time you will find me socializing with friends, doing
+								sports and traveling. Please download my resumé for a more
+								detailed overview of my experience.
+							</p>
+							<!-- Provide a link to your resume -->
+							<a href="#" class="btn">My Resume</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-    <!-- ***** Clients ***** -->
+		<!-- ***** Contact ***** -->
 
-    <section class="expertise" id="expertise">
-      <div class="row">
-        <h2>Expertise</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/management.jpeg" class="client__logo" alt="Management" />
-          <img src="./images/dataanalysis.jpg" class="client__logo" alt="DataAnalysis" />
-          <img src="./images/integrations.png" class="client__logo" alt="Integrations" />
-          <img src="./images/python.png" class="client__logo" alt="Python" />
-          <img src="./images/SQL.webp" class="client__logo" alt="SQL" />
-          <img src="./images/powershell.jpeg" class="client__logo" alt="" />
-          <img src="./images/deeplearning.png" class="client__logo" alt="DeepLearning" />
-          <img src="./images/machinelearning.png" class="client__logo" alt="MachineLearning" />
-          <img src="./images/NLP.jpeg" class="client__logo" alt="NLP" />
-        </div>
-      </div>
-    </section>
+		<section class="contact" id="contact">
+			<div class="row">
+				<h2>Get in Touch</h2>
+				<div class="contact__info">
+					<p>
+						Please feel free to get in touch with me, I'll do my best to respond
+						promptly.
+					</p>
+					<!-- Replace the email with yours -->
+					<a href="mailto:buftea93@yahoo.es" class="btn">buftea93@yahoo.es</a>
+				</div>
+			</div>
+		</section>
 
-    <!-- ***** About ***** -->
+		<!-- ***** Footer ***** -->
 
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
+		<footer role="contentinfo" class="footer">
+			<div class="row">
+				<p>
+					&copy; 2023 - Fell free to use any of my code or paper conlcusions. It
+					means a lot if you reference my work, thank you.
+					<br />
+					This website was created using the
+					<a href="https://github.com/nisarhassan12/portfolio-template"
+						>template</a
+					>
+					developed by <a href="https://nisar.dev/">Nisar</a>.
+				</p>
+			</div>
+		</footer>
 
-
-        <div class="about__content">
-          
-          <div class="about__photo-container">
-            <img src="./images/AboutMePicture.jpeg" class="w3-circle" alt="" style="width:30%">
-          </div>
-
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              I am a graduated engineer with an entrepreneurial mindset interested in digital products and enhancing
-              users experience. My technical focus is on Artificial Intelligence and Data Analytics. 
-              Currently, I am employed by Banco Santander where I lead the implementation of Know Yor Customer (KYC) initiatives.
-              On my free time you will find me socializing with friends, doing sports and traveling.
-              Please download my resumé for a more detailed overview of my experience. 
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
-
-
-          </div>
-                       
-
-
-
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class='row'>
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Please feel free to get in touch with me, I'll do my best to respond promptly.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:buftea93@yahoo.es" class="btn">buftea93@yahoo.es</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <p>
-        &copy; 2023 - Fell free to use any of my code or paper conlcusions. It means a lot if you reference my work, thank you.
-        <br>
-        This website was created using the <a href="https://github.com/nisarhassan12/portfolio-template">template</a> developed by <a href="https://nisar.dev/">Nisar</a>.
-      </p> 
-    </div>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
-</body>
+		<a href="#top" class="back-to-top" title="Back to Top">
+			<img
+				src="./images/arrow-up.svg"
+				alt="Back to Top"
+				class="back-to-top__image" />
+		</a>
+		<script src="./index.js"></script>
+	</body>
 </html>
