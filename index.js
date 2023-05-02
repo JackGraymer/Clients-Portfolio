@@ -9,6 +9,7 @@ const handleFirstTab = (e) => {
     window.removeEventListener('keydown', handleFirstTab)
     window.addEventListener('mousedown', handleMouseDownOnce)
   }
+
 }
 
 const handleMouseDownOnce = () => {
@@ -40,3 +41,8 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+// random number generator
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
